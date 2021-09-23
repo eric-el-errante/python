@@ -1,1 +1,1 @@
-print('hello from a file')
+print('optional assignment to print one line')
