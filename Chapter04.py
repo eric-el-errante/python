@@ -20,6 +20,8 @@ print(greet(), "Glenn")
 
 
 # The return statement passes back a value
+# In this example, i am passing two values to addtwo() and it
+# returns one value, which is then assigned into x
 
 def addtwo(a,b):
     added = a + b
