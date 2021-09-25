@@ -16,6 +16,7 @@ Comparison Operators
 >   Greater than
 !=  Not equal
 """
+
 x=5
 print('x=',5)
 if x==5:
@@ -46,10 +47,43 @@ if x>1:
         print("Less than 100")
 print('all done')
 
-# Two-way Decisions....for-else
-x=2
+# Two-way Decisions....if-else
+# IF this is true do this, ELSE it's false then do this instead
+x=4
 if x>2:
     print('Bigger')
 else:
     print('Smaller')
 print('all done')
+
+# Multi-Way elif (else if), will only do 1 of the 3 things
+x = 11
+if x < 2:
+    print('small')
+elif x < 10:
+    print('medium')
+else:
+    print('large')
+print('all done')
+
+# The final else doesn't HAVE to be there, you can write a multi-way
+# that is just an if-elif, it just wouldnt have any output if the
+# first two cases are not true
+
+# Try / Except Structure, a way to eliminate a traceback
+# it can be a way to give an error message instead of blowing up
+
+astr = "Hello Bob"
+try:
+    istr = int(astr)     # This will cause a traceback/explosion
+except:
+    istr = -1            # This runs and avoids the traceback
+print('First',istr)
+
+astr = '123'
+try:
+    istr = int(astr)     # This is acceptable
+except:
+    istr = -1            # So this will not run
+print('Second', istr)
+
