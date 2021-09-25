@@ -1,0 +1,1 @@
+# Nothing really to note. Just about installing Python and an IDE/editor
