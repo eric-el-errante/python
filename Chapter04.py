@@ -16,7 +16,7 @@ thing()
 def greet():
     return "Hello"
 
-print(greet(), "Glenn")
+print(greet(), "Alexis")
 
 
 # The return statement passes back a value
@@ -28,3 +28,6 @@ def addtwo(a,b):
     return added
 x = addtwo(3,5)
 print(x)
+
+# fruitful functions return values
+# non-fruitful functions do not return values
