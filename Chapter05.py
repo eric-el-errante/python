@@ -87,5 +87,55 @@ print('Done!')
 # which then updates a variable
 # then look at the variables
 
+# Counting the amount of loops
+counter = 0
+print('Before', counter)
+for thing in [9, 41, 12, 3, 74, 15] :
+    counter = counter + 1
+    print(counter, thing)
+print('After', counter)
+# 'counter' is a counter variable that starts at zero
 
+# Total a series of values
+total = 0
+print('Before', total)
+for thing in [9, 41, 12, 3, 74, 15] :
+    total = total + thing
+    print(total, thing)
+print('After', total)
+# 'total' is a sum variable that starts at zero
 
+# Finding the average
+count = 0
+sum = 0
+print('Before', count, sum)
+for value in [9, 41, 12, 3, 74, 15] :
+    count = count + 1
+    sum = sum + value
+    average = sum / count
+    print(count, sum, value, average)
+print('After', count, sum, sum / count)
+
+# Filtering is looking for something that meets a criteria
+# Putting an 'if' statement in a loop
+print('Before')
+for value in [9, 41, 12, 3, 74, 15] :
+    if value > 20 :
+        print ('Large number', value)
+print('After')
+
+# Search using a boolean value
+found = False
+print('Before', found)
+for value in [9, 41, 12, 3, 74, 15] :
+    if value == 3 :
+        found = True
+    print(found, value)
+print('After', found)
+# All this is saying is that SOMEWHERE in the set we found a 3
+
+# This 'is' and 'is not' operators are used in logical expressions
+# it implies "is the same as", similar but strong than ==
+# if smallest is None :
+# if biggest is not True :
+# is/not should be used for None/True/False, not for values
