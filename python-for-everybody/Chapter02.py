@@ -8,7 +8,9 @@
 *   Multiplication
 /   Division
 **  Power
-%   Remainder (modulo)
+%   Remainder (modulus)
+//  Division but will truncate the decimal portion
+
 """
 
 # Integer Division will results in a floating point result
@@ -18,3 +20,8 @@ nam=input("Who are you?")
 # the input() function pauses and waits for user input, and will return a string
 print('Welcome',nam)
 # inam=int(nam) will turn the string value of nam into an integer if a number is the expected input
+
+x = 5343432
+print(x)
+print(x % 10)
+print(x % 100)
