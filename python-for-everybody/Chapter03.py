@@ -15,6 +15,8 @@ Comparison Operators
 >=  Greater than or Equal to
 >   Greater than
 !=  Not equal
+is  _ is same as _
+is not  _ is not the same as _
 """
 
 x=5
