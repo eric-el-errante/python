@@ -88,7 +88,7 @@ if wordc > worda :
 else :
     print(wordc,'comes before',worda)
 
-#string library
+#string library / string functions
 greet = 'Hello Alexis'
 lowercasegreet = greet.lower()
 uppercasegreet = greet.upper()
@@ -99,3 +99,47 @@ stuff = 'Hello World'
 print(type(stuff))
 print(dir(stuff))       # this lists all the methods you can apply ************
 print(stuff.rjust(20))
+
+# Common string library methods
+str = 'this IS a String with soMe weIRD stuff'
+
+# Capitalize first letter in the string only
+print('str.capitalize()',str.capitalize())
+
+# Center the string in a block of width, add in char or space
+print('str.center(width,character)\n',str.center(45,'*'))
+
+# Check if a string ends/starts with certain chars
+print("str.endswith('uff')",str.endswith('uff'))
+print("str.startswith('thi')",str.startswith('thi'))
+
+# find the earliest index some chars appear
+print("str.find('weI')", str.find('weI'))
+
+# leading/ending chars removed, default is whitespace
+print("str.lstrip('th')",str.lstrip('th'))
+print("str.rstrip('th')",str.rstrip('f'))
+print("str.strip('thf')",str.strip('thf'))
+
+# replaces chars with others
+print("str.replace('weIRD','weird')",str.replace('weIRD','weird'))
+
+# all chars to lowercase or uppercase
+print('str.lower()',str.lower())
+print('str.upper()',str.upper())
+
+# find operator, it will find the first occurence and give index
+# -1 if it is not found
+fruit = 'banana'
+print('in the word banana...')
+print("'n' in fruit?",'n' in fruit)
+print("fruit.find('n')", fruit.find('n'))
+print("fruit.find('z')", fruit.find('z'),"'z' is not in fruit")
+
+data = 'eric.meyr@gmail.com Thu Sep 30 10:11:10 2021'
+start = data.find('@')
+print(start)
+end = data.find(' ',start)
+print(end)
+host = data[start + 1 : end]        # splices the string
+print(host)
