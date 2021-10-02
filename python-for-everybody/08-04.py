@@ -9,5 +9,9 @@ fh = open(fname)
 lst = list()
 for line in fh :
     line = line.rstrip()
-    line.split()
-    print(line)
+    newline = line.split()
+    for x in newline :
+        if x not in lst :
+            lst.append(x)
+lst.sort()
+print(lst)
