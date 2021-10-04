@@ -74,3 +74,28 @@ favorite_language = favorite_language.rstrip()
 other_language = other_language.lstrip()
 print(favorite_language)
 print(other_language)
+
+# integers are just integers
+# floats are numbers with decimal points
+print('0.1 + 0.1 =', 0.1 + 0.1)
+print('3 * 0.1 =', 3 * 0.1)
+# the second one gives an arbitary number of decimal places
+
+# when you divide two numbers you always get a float
+print('4 / 2 =', 4 / 2)
+
+# if you mix an integer with a float, you get a float
+print('4.0 + 2 =', 4.0 + 2)
+print('4 + 2 =', 4 + 2)
+
+# underscores can be used in the code and won't affect the output
+age = 14_000_000
+print('14_000_000 in code = ', age)
+
+# can assign more than one variable at a time
+x, y, z = 1, 2, 3
+print(x,y,z)
+
+# Capitol letters for a variable name indicate it should be a constant
+# and not change throughout the program
+MAXCONNECTIONS = 5000
