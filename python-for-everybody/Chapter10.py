@@ -71,5 +71,6 @@ for k,v in c.items() :
 print(tmp)
 tmp = sorted(tmp)                       # sorts list by value
 print(tmp)
-tmp = (tmp, reverse=True)               # sorts list in reverse order
+tmp = sorted(tmp, reverse=True)         # sorts list in reverse order
 print(tmp)
+
