@@ -48,3 +48,34 @@ print("The sum(digits) is:", sum(digits))
 squares = [value**2 for value in range(1,11)]
 print(squares)
 
+# slicing a list, this will print various elements
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print(players[0:3])     # prints the first 3 elements
+print(players[:4])      # prints from the beginning to 4 elements
+print(players[2:])      # prints from 3 element to end
+print(players[1:3])     # prints from 2 to 4 element
+print(players[-3:])     # prints from third from last to end
+
+# looping through a slice
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print("Here are the first three players on the team:")
+for player in players[:3]:
+    print(player.title())
+
+# Copying a list, use an empty slide [:]
+# This makes a slice which starts at first item and ends at last item
+# effectively making a copy
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+print("My favorite foods are:", my_foods)
+print("My friend's favorite foods are:",friend_foods)
+
+# we can append an item to the end of each list to see they are in fact seperate
+my_foods.append('canoli')
+friend_foods.append('ice cream')
+print("My favorite foods are:", my_foods)
+print("My friend's favorite foods are:",friend_foods)
+
+# THIS DOES NOT WORK
+# friend_foods = my_foods will literally set friend_foods equal to my_foods
+# thus any change make to either list will change the other list
