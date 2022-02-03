@@ -79,3 +79,48 @@ print("My friend's favorite foods are:",friend_foods)
 # THIS DOES NOT WORK
 # friend_foods = my_foods will literally set friend_foods equal to my_foods
 # thus any change make to either list will change the other list
+
+# Tuples
+# values that cannot be changed are immutable
+# a tuple is an immutable list
+
+dimensions = (200,50)
+print(dimensions[0])
+print(dimensions[1])
+print(dimensions)
+
+# REMEMBER a list uses brackets and tuples use parenthesis
+
+# Trying to change dimensions by uusing
+# dimensions[0] = 250
+# will results in a type error
+
+# tuples generally have more than one element, however can be defined as:
+my_t = (3,)
+print(my_t)
+
+for dimension in dimensions:
+    print(dimension)
+
+# You can change an ENTIRE tuple by redefining its variable
+dimensions = (200,50)
+print("Original Dimensions:")
+for dimension in dimensions:
+    print(dimension)
+dimensions = (400,100)
+print("Modified Dimensions:")
+for dimension in dimensions:
+    print(dimension)
+
+# PEP 8 rules for code styling that makes it easier to read and debug
+
+# Four spaces per indentation level
+# TAB usually does 5 spaces, so make sure settings are changed to 4 spaces
+# whenever TAB is pushed
+
+# Line Length is generally 79 characters or less for code
+# 72 characters for comments
+
+# adding a blank line between "sections" of code is encouraged and useful
+# group according to functionality and purpose
+
