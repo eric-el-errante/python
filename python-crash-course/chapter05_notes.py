@@ -77,3 +77,38 @@ if user not in banned_users:
     print(f"{user.title()}, you can post a response if you wish.")
 
 # Boolean expression is either True or False
+
+age = 17
+# the indented lines will run if the conditional test is true
+if age >= 18:
+    print("You are old enough to vote!")
+    print("Have you registered to vote?")
+# the indented lines will run if the conditional test is false
+else:
+    print("Sorry, you are too young to vote.")
+    print("Please register to vote as soon as you turn 18!")
+
+# if-elif-else chains
+
+age = 19
+
+if age < 4:
+    print("Your admission cost is $0.")
+elif age < 18:
+    print("Your admission cost is $5.")
+else:
+    print("Your admission cost is $10.")
+
+# a more concise way to do this, more efficient and easier to modify
+
+age = 12
+
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 5
+else:
+    price = 10
+
+# the + adds things together without a space
+print("Your admission cost is $" + str(price) + ".")
