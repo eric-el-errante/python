@@ -112,3 +112,4 @@ else:
 
 # the + adds things together without a space
 print("Your admission cost is $" + str(price) + ".")
+
